@@ -1,0 +1,131 @@
+body {
+    text-align: center;
+    font-family: 'Gugi', cursive;
+    background-color: #00BCD4;
+}
+.header {
+    color: #1A237E;
+    padding: 0;
+    animation-name: pulse;
+	  -webkit-backface-visibility: visible !important;
+	   backface-visibility: visible !important;
+	   animation-duration: .75s;
+}
+canvas {
+    margin-top: -4em;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    width: 505px;
+    height: 538px;
+    position: absolute;
+    top: 91px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.start-game {
+    position: absolute;
+    background-color: #D4F4DD;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    top: 153px;
+    width: 420px;
+    height: 410px;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+.start-game h1, h3, h4 {
+    font-weight: bold;
+}
+
+.start-game h4 {
+    color: #E3170A;
+}
+
+.start-game button {
+    background-color: royalblue;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.hide {
+	visibility: hidden;
+	opacity: 0 !important;
+}
+.show {
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+.game-over {
+    position: absolute;
+    background-color: #990005;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    top: 153px;
+    width: 347px;
+    height: 303px;
+    margin: 0 auto;
+    padding: 3em 3em;
+    color: #fff;
+    visibility: hidden;
+}
+
+.game-over button {
+    background-color: royalblue;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 15px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 2em;
+}
+
+.winner {
+    position: absolute;
+    background-color: #0D4B9B;
+    border-radius: 5px;
+    left: 0;
+    right: 0;
+    top: 153px;
+    width: 347px;
+    height: 303px;
+    margin: 0 auto;
+    padding: 3em 3em;
+    color: #fff;
+    visibility: hidden;
+}
+
+.winner button {
+    background-color: #D62246;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 15px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 2em;
+}
+
+/* animations  */
+@keyframes pulse {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+
+	50% {
+		transform: scale3d(1.2, 1.2, 1.2);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
